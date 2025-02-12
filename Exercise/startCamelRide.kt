@@ -1,7 +1,8 @@
-fun currentTemperature (morningTemperature: Int , afternoonTemperature: Int): Int {
-    return (morningTemperature + afternoonTemperature) / 2
+fun startCamelRide (time: Int , speed: Int = 5){
+    val distance = time * speed
+    println("Camel Ride: Distance = $distance km, Speed = $speed km/h, Time = $time hours")
 }
 fun main (){
-    val averageTemperature = currentTemperature(25, 40)
-    println("Average Temperature: $averageTemperature")
+    startCamelRide(10, 5)
+    startCamelRide(10)
 }
